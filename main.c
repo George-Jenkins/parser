@@ -61,6 +61,11 @@ int lookup(char ch) {
             break;
         case '*':
             addChar();
+            nextToken = MULT_OP;
+            break;
+        case '/':
+            addChar();
+            nextToken = DIV_OP;
 
 int main(int argc, const char * argv[]) {
     
