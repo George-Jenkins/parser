@@ -141,6 +141,11 @@ char* lex() {
         case EOF:
             nextToken = EOF;
             lexeme[0] = 'E';
+            lexeme[1] = 'O';
+            lexeme[2] = 'F';
+            lexeme[3] = 0;
+            break;
+    } /* End of switch */
 
 int main(int argc, const char * argv[]) {
     
