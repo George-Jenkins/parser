@@ -185,6 +185,11 @@ int main(int argc, const char * argv[]) {
                         break;
                     }
                 }//while
+            }//if
+            
+        } while (nextToken != EOF);
+    }
+    
     return 0 ;
     
 }
