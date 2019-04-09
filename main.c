@@ -165,9 +165,16 @@ int main(int argc, const char * argv[]) {
     if ((in_fp = fopen(argv[1], "r")) == NULL)
         printf("ERROR - cannot open %s \n", argv[1]);
     else {
+        
         getChar();
         printf("--Parsing line %i--\n", lineCount);
     
+        do {
+            if (nextChar=='\n'){
+                lineCount++;
+                printf("\n--Parsing line %i--\n", lineCount);
+            }
+        
     return 0 ;
     
 }
