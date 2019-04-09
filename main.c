@@ -39,6 +39,13 @@ void error();
 #define RIGHT_PAREN 26
 #define ERROR 27
 
+/* lookup - a function to lookup operators and parentheses
+ and return the token */
+int lookup(char ch) {
+    switch (ch) {
+        case '(':
+            addChar();
+
 int main(int argc, const char * argv[]) {
     
    
