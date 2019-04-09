@@ -124,6 +124,11 @@ char* lex() {
             break;
             /* Parse integer literals */
         case DIGIT:
+            addChar();
+            getChar();
+            while (charClass == DIGIT) {
+                addChar();
+                getChar();
 
 int main(int argc, const char * argv[]) {
     
