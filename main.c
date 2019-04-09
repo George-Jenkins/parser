@@ -20,7 +20,6 @@ void addChar();
 void getChar();
 void getNonBlank();
 char* lex();
-void error();
 
 /* Character classes */
 #define LETTER 0
@@ -156,6 +155,10 @@ char* lex() {
     }
     else{
         strcpy(retLex,"Error\n");
+        errorFound = 1;
+    }
+    return retLex;
+} /* End of function lex */
 
 int main(int argc, const char * argv[]) {
     
