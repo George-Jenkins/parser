@@ -151,6 +151,11 @@ char* lex() {
         sprintf(tokenStr, "%i", nextToken);
         strcat(retLex, tokenStr );
         strcat(retLex, ", Next lexeme is ");
+        strcat(retLex, lexeme);
+        strcat(retLex, "\n");
+    }
+    else{
+        strcpy(retLex,"Error\n");
 
 int main(int argc, const char * argv[]) {
     
