@@ -174,7 +174,13 @@ int main(int argc, const char * argv[]) {
                 lineCount++;
                 printf("\n--Parsing line %i--\n", lineCount);
             }
-        
+            lex();
+            printf("%s", retLex);
+            strcpy(retLex, "");
+            
+            if( errorFound == 1 ){
+                while((nextChar = getc(in_fp)) != EOF){
+            
     return 0 ;
     
 }
