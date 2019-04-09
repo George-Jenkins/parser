@@ -22,6 +22,11 @@ void getNonBlank();
 char* lex();
 void error();
 
+/* Character classes */
+#define LETTER 0
+#define DIGIT 1
+#define UNKNOWN 99
+
 int main(int argc, const char * argv[]) {
     
    
