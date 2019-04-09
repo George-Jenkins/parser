@@ -106,6 +106,13 @@ void getNonBlank() {
         getChar();
 }
 
+/* lex - a simple lexical analyzer for arithmetic
+ expressions */
+char* lex() {
+    lexLen = 0;
+    getNonBlank();
+    switch (charClass) {
+
 int main(int argc, const char * argv[]) {
     
    
