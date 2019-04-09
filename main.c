@@ -98,7 +98,14 @@ void getChar() {
     else
         charClass = EOF;
 }
-    
+
+/* getNonBlank - a function to call getChar until it
+ returns a non-whitespace character */
+void getNonBlank() {
+    while (isspace(nextChar))
+        getChar();
+}
+
 int main(int argc, const char * argv[]) {
     
    
