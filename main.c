@@ -17,6 +17,10 @@ FILE *in_fp, *fopen(), *fp;
 
 /* Function declarations */
 void addChar();
+void getChar();
+void getNonBlank();
+char* lex();
+void error();
 
 int main(int argc, const char * argv[]) {
     
