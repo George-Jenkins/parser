@@ -37,6 +37,7 @@ void error();
 #define DIV_OP 24
 #define LEFT_PAREN 25
 #define RIGHT_PAREN 26
+#define ERROR 27
 
 int main(int argc, const char * argv[]) {
     
