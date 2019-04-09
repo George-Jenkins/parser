@@ -66,7 +66,12 @@ int lookup(char ch) {
         case '/':
             addChar();
             nextToken = DIV_OP;
-
+            break;
+        default:
+            addChar();
+            nextToken = ERROR;
+            break;
+            
 int main(int argc, const char * argv[]) {
     
    
