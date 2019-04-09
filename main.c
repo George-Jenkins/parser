@@ -118,6 +118,12 @@ char* lex() {
             getChar();
             while (charClass == LETTER || charClass == DIGIT) {
                 addChar();
+                getChar();
+            }
+            nextToken = IDENT;
+            break;
+            /* Parse integer literals */
+        case DIGIT:
 
 int main(int argc, const char * argv[]) {
     
