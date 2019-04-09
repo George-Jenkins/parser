@@ -90,6 +90,11 @@ void addChar() {
 void getChar() {
     if ((nextChar = getc(in_fp)) != EOF) {
         if (isalpha(nextChar))
+            charClass = LETTER;
+        else if (isdigit(nextChar))
+            charClass = DIGIT;
+        else charClass = UNKNOWN;
+    }
 
 int main(int argc, const char * argv[]) {
     
