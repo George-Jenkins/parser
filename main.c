@@ -11,6 +11,12 @@ char tokenStr[100];
 int errorFound = 0;
 int lineCount = 1;
 int lexLen;
+int token;
+int nextToken;
+FILE *in_fp, *fopen(), *fp;
+
+/* Function declarations */
+void addChar();
 
 int main(int argc, const char * argv[]) {
     
