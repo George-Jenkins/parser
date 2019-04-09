@@ -112,6 +112,12 @@ char* lex() {
     lexLen = 0;
     getNonBlank();
     switch (charClass) {
+        /* Parse identifiers */
+        case LETTER:
+            addChar();
+            getChar();
+            while (charClass == LETTER || charClass == DIGIT) {
+                addChar();
 
 int main(int argc, const char * argv[]) {
     
