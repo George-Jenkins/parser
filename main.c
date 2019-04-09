@@ -135,6 +135,12 @@ char* lex() {
             /* Parentheses and operators */
         case UNKNOWN:
             lookup(nextChar);
+            getChar();
+            break;
+            /* EOF */
+        case EOF:
+            nextToken = EOF;
+            lexeme[0] = 'E';
 
 int main(int argc, const char * argv[]) {
     
