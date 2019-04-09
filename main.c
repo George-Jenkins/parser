@@ -51,6 +51,11 @@ int lookup(char ch) {
             addChar();
             nextToken = RIGHT_PAREN;
             break;
+        case '+':
+            addChar();
+            nextToken = ADD_OP;
+            break;
+        case '-':
 
 int main(int argc, const char * argv[]) {
     
