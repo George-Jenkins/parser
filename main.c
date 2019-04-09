@@ -129,6 +129,12 @@ char* lex() {
             while (charClass == DIGIT) {
                 addChar();
                 getChar();
+            }
+            nextToken = INT_LIT;
+            break;
+            /* Parentheses and operators */
+        case UNKNOWN:
+            lookup(nextChar);
 
 int main(int argc, const char * argv[]) {
     
