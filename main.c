@@ -146,6 +146,11 @@ char* lex() {
             lexeme[3] = 0;
             break;
     } /* End of switch */
+    if(nextToken != ERROR){
+        strcat(retLex, "Next token is: ");
+        sprintf(tokenStr, "%i", nextToken);
+        strcat(retLex, tokenStr );
+        strcat(retLex, ", Next lexeme is ");
 
 int main(int argc, const char * argv[]) {
     
