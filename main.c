@@ -71,6 +71,9 @@ int lookup(char ch) {
             addChar();
             nextToken = ERROR;
             break;
+    }
+    return nextToken;
+}
             
 int main(int argc, const char * argv[]) {
     
