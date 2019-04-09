@@ -84,7 +84,13 @@ void addChar() {
     else
         printf("Error - lexeme is too long \n");
 }
-            
+
+/* getChar - a function to get the next character of
+ input and determine its character class */
+void getChar() {
+    if ((nextChar = getc(in_fp)) != EOF) {
+        if (isalpha(nextChar))
+
 int main(int argc, const char * argv[]) {
     
    
