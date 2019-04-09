@@ -45,6 +45,12 @@ int lookup(char ch) {
     switch (ch) {
         case '(':
             addChar();
+            nextToken = LEFT_PAREN;
+            break;
+        case ')':
+            addChar();
+            nextToken = RIGHT_PAREN;
+            break;
 
 int main(int argc, const char * argv[]) {
     
