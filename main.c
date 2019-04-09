@@ -95,7 +95,10 @@ void getChar() {
             charClass = DIGIT;
         else charClass = UNKNOWN;
     }
-
+    else
+        charClass = EOF;
+}
+    
 int main(int argc, const char * argv[]) {
     
    
