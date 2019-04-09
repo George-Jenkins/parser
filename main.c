@@ -180,7 +180,11 @@ int main(int argc, const char * argv[]) {
             
             if( errorFound == 1 ){
                 while((nextChar = getc(in_fp)) != EOF){
-            
+                    if(nextChar == '\n'){
+                        errorFound = 0;
+                        break;
+                    }
+                }//while
     return 0 ;
     
 }
